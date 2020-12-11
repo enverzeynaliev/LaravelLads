@@ -21,6 +21,13 @@
     </div>
 
     <div class="form-group">
+
+
+
+
+
+
+
         <label for="genre">Жанр</label>
         <input type="text" name="genre" placeholder="Введите жанр" id="genre" class="form-control">
     </div>
