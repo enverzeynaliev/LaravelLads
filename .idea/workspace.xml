@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="af65adda-6ef2-4684-8f29-347021a2c7df" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/LaravelLabs/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
+    <include_path>
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/dnoegel/php-xdg-base-dir" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/composer" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/beyondcode/laravel-dump-server" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/opis/closure" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/symfony/http-client-contracts" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/fideloper/proxy" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/erusev/parsedown" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/laravel/tinker" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/symfony/polyfill-iconv" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/jakub-onderka/php-console-highlighter" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/jakub-onderka/php-console-color" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/LaravelLabs/vendor/phpoption/phpoption" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1lVtxdXF2IWVK2b3vQstFFkeXA9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="af65adda-6ef2-4684-8f29-347021a2c7df" name="Default Changelist" comment="" />
+      <created>1607694335888</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1607694335888</updated>
+      <workItem from="1607694337438" duration="3915000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
