@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="af65adda-6ef2-4684-8f29-347021a2c7df" name="Default Changelist" comment="first push">
-      <change beforePath="$PROJECT_DIR$/LaravelLabs/resources/views/add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/LaravelLabs/resources/views/add.blade.php" afterDir="false" />
-    </list>
+    <list default="true" id="af65adda-6ef2-4684-8f29-347021a2c7df" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -106,9 +104,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1lVtxdXF2IWVK2b3vQstFFkeXA9" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <OptionsSetting value="false" id="Update" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
