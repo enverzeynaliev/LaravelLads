@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="af65adda-6ef2-4684-8f29-347021a2c7df" name="Default Changelist" comment="first push">
+    <list default="true" id="af65adda-6ef2-4684-8f29-347021a2c7df" name="Default Changelist" comment="start work">
+      <change afterPath="$PROJECT_DIR$/LaravelLabs/resources/views/inc/header_log.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LaravelLabs/resources/views/inc/header_reg.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LaravelLabs/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/LaravelLabs/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LaravelLabs/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/LaravelLabs/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LaravelLabs/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/LaravelLabs/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LaravelLabs/resources/views/homepage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/LaravelLabs/resources/views/homepage.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LaravelLabs/resources/views/inc/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/LaravelLabs/resources/views/inc/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LaravelLabs/resources/views/welcome.blade.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +132,10 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1lVtxdXF2IWVK2b3vQstFFkeXA9" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -160,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607701459560</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="start work">
+      <created>1607705838853</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1607705838853</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,6 +186,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first push" />
-    <option name="LAST_COMMIT_MESSAGE" value="first push" />
+    <MESSAGE value="start work" />
+    <option name="LAST_COMMIT_MESSAGE" value="start work" />
   </component>
 </project>
