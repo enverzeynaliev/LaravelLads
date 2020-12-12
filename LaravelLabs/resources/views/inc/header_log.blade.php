@@ -7,7 +7,7 @@
     </nav>
     <div class="a3">
         <a id="a1" class="btn btn-outline-primary" href="{{ route('register') }}">Регистрация</a>
-        <a id="a2" class="btn btn-outline-secondary" href="{{ route('login') }}">Войти</a>
+        <a id="a2" class="btn btn-outline-success" href="{{ route('login') }}">Войти</a>
     </div>
 </header>
 <style>

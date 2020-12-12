@@ -42,9 +42,9 @@
         margin-left: 20%;
         margin-right: 20%;
     }
+
 </style>
 
-@include('inc.footer')
 
 </body>
 </html>

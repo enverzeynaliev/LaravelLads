@@ -15,6 +15,5 @@
 
 </body>
 
-@include('inc.footer')
 
 </html>
