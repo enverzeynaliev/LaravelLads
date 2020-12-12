@@ -1,24 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="af65adda-6ef2-4684-8f29-347021a2c7df" name="Default Changelist" comment="edit styles and header">
+    <list default="true" id="af65adda-6ef2-4684-8f29-347021a2c7df" name="Default Changelist" comment=" bags fixed">
+      <change afterPath="$PROJECT_DIR$/LaravelLabs/resources/views/admin/admin_page.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LaravelLabs/resources/views/add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/LaravelLabs/resources/views/add.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LaravelLabs/resources/views/auth/passwords/email.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/LaravelLabs/resources/views/auth/passwords/email.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LaravelLabs/resources/views/auth/passwords/reset.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/LaravelLabs/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LaravelLabs/resources/views/catalog.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/LaravelLabs/resources/views/catalog.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LaravelLabs/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/LaravelLabs/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LaravelLabs/resources/views/homepage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/LaravelLabs/resources/views/homepage.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LaravelLabs/resources/views/inc/footer.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LaravelLabs/resources/views/inc/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/LaravelLabs/resources/views/inc/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LaravelLabs/resources/views/inc/header_log.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/LaravelLabs/resources/views/inc/header_log.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LaravelLabs/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/LaravelLabs/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LaravelLabs/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/LaravelLabs/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/LaravelLabs/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -38,7 +32,7 @@
     </excluded-from-favorite>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="enzeyTask" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -156,6 +150,11 @@
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\DELL\PhpstormProjects\LaravelLabs\LaravelLabs\resources\views\admin" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -165,6 +164,7 @@
       <option name="presentableId" value="Default" />
       <updated>1607694335888</updated>
       <workItem from="1607694337438" duration="4766000" />
+      <workItem from="1607769215607" duration="7049000" />
     </task>
     <task id="LOCAL-00001" summary="first push">
       <created>1607701459560</created>
@@ -173,14 +173,41 @@
       <option name="project" value="LOCAL" />
       <updated>1607701459560</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="mini bags fixed">
+      <created>1607736740457</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1607736740457</updated>
+    </task>
+    <task id="LOCAL-00003" summary=" bags fixed">
+      <created>1607736815423</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1607736815423</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first push" />
-    <option name="LAST_COMMIT_MESSAGE" value="first push" />
+    <MESSAGE value="mini bags fixed" />
+    <MESSAGE value=" bags fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value=" bags fixed" />
   </component>
 </project>
