@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af65adda-6ef2-4684-8f29-347021a2c7df" name="Default Changelist" comment=" bags fixed">
-      <change afterPath="$PROJECT_DIR$/LaravelLabs/resources/views/admin/admin_page.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LaravelLabs/database/seeds/UserSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LaravelLabs/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/LaravelLabs/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LaravelLabs/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/LaravelLabs/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LaravelLabs/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/LaravelLabs/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LaravelLabs/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/LaravelLabs/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LaravelLabs/resources/views/auth/passwords/reset.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/LaravelLabs/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LaravelLabs/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/LaravelLabs/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LaravelLabs/resources/views/auth/verify.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/LaravelLabs/resources/views/auth/verify.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LaravelLabs/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/LaravelLabs/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -136,6 +141,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -164,7 +170,7 @@
       <option name="presentableId" value="Default" />
       <updated>1607694335888</updated>
       <workItem from="1607694337438" duration="4766000" />
-      <workItem from="1607769215607" duration="7049000" />
+      <workItem from="1607769215607" duration="10283000" />
     </task>
     <task id="LOCAL-00001" summary="first push">
       <created>1607701459560</created>
@@ -187,7 +193,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607736815423</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary=" bags fixed">
+      <created>1607779766102</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1607779766102</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,6 +218,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="first push" />
     <MESSAGE value="mini bags fixed" />
     <MESSAGE value=" bags fixed" />
