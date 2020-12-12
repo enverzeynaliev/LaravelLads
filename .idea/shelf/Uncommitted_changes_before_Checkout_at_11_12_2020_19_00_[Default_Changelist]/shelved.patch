@@ -1,0 +1,24 @@
+Index: LaravelLabs/resources/views/add.blade.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\n<html xmlns:th=\"http://www.thymeleaf.org\">\n<head>\n    <meta charset=\"utf-8\">\n    <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\"\n          integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\">\n    <link rel=\"stylesheet\" href=\"public/css/app.css\">\n    <title> Подача идеи </title>\n    <link rel=\"icon\" href=\"img/favicon.ico\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maxim-scale=1.0, user-scalable=0 /\">\n</head>\n<body>\n\n@include('inc.header')\n\n<form action=\"/add\" method=\"post\">\n    @csrf\n    <div class=\"form-group\">\n        <label for=\"name\">Заголовок</label>\n        <input type=\"text\" name=\"name\" placeholder=\"Заголовок\" id=\"name\" class=\"form-control  \">\n    </div>\n\n    <div class=\"form-group\">\n\n\n\n\n\n\n\n        <label for=\"genre\">Жанр</label>\n        <input type=\"text\" name=\"genre\" placeholder=\"Введите жанр\" id=\"genre\" class=\"form-control\">\n    </div>\n    <div class=\"form-group\">\n        <label for=\"fullText\">Отзыв</label>\n        <textarea type=\"text\" name=\"fullText\" placeholder=\"Отзыв об игре\" id=\"fullText\" class=\"form-control\"></textarea>\n    </div>\n    <button type=\"submit\" class=\"btn btn-success\">Supply</button>\n</form>\n<style>\n    form {\n        margin-left: 20%;\n        margin-right: 20%;\n    }\n</style>\n\n@include('inc.footer')\n\n</body>\n</html>\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/LaravelLabs/resources/views/add.blade.php b/LaravelLabs/resources/views/add.blade.php
+--- a/LaravelLabs/resources/views/add.blade.php	(revision c867e179b6fe94ae89437bbef80ee9530c57cf4e)
++++ b/LaravelLabs/resources/views/add.blade.php	(date 1607702432400)
+@@ -21,13 +21,6 @@
+     </div>
+ 
+     <div class="form-group">
+-
+-
+-
+-
+-
+-
+-
+         <label for="genre">Жанр</label>
+         <input type="text" name="genre" placeholder="Введите жанр" id="genre" class="form-control">
+     </div>

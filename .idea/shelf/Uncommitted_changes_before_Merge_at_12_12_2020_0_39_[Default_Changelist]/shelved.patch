@@ -1,0 +1,477 @@
+Index: LaravelLabs/resources/views/auth/register.blade.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!doctype html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\"\n          content=\"width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n    <title>Registration</title>\n    <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\"\n          integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\">\n    <link rel=\"stylesheet\" href=\"public/css/app.css\">\n</head>\n<body>\n@include('inc.header_reg')\n<div class=\"container\">\n    <div class=\"row justify-content-center\">\n        <div class=\"col-md-8\">\n            <div class=\"card\">\n                <div class=\"card-header\">{{ __('Register') }}</div>\n\n                <div class=\"card-body\">\n                    <form method=\"POST\" action=\"{{ route('register') }}\">\n                        @csrf\n\n                        <div class=\"form-group row\">\n                            <label for=\"name\" class=\"col-md-4 col-form-label text-md-right\">{{ __('Name') }}</label>\n\n                            <div class=\"col-md-6\">\n                                <input id=\"name\" type=\"text\" class=\"form-control @error('name') is-invalid @enderror\" name=\"name\" value=\"{{ old('name') }}\" required autocomplete=\"name\" autofocus>\n\n                                @error('name')\n                                    <span class=\"invalid-feedback\" role=\"alert\">\n                                        <strong>{{ $message }}</strong>\n                                    </span>\n                                @enderror\n                            </div>\n                        </div>\n\n                        <div class=\"form-group row\">\n                            <label for=\"email\" class=\"col-md-4 col-form-label text-md-right\">{{ __('E-Mail Address') }}</label>\n\n                            <div class=\"col-md-6\">\n                                <input id=\"email\" type=\"email\" class=\"form-control @error('email') is-invalid @enderror\" name=\"email\" value=\"{{ old('email') }}\" required autocomplete=\"email\">\n\n                                @error('email')\n                                    <span class=\"invalid-feedback\" role=\"alert\">\n                                        <strong>{{ $message }}</strong>\n                                    </span>\n                                @enderror\n                            </div>\n                        </div>\n\n                        <div class=\"form-group row\">\n                            <label for=\"password\" class=\"col-md-4 col-form-label text-md-right\">{{ __('Password') }}</label>\n\n                            <div class=\"col-md-6\">\n                                <input id=\"password\" type=\"password\" class=\"form-control @error('password') is-invalid @enderror\" name=\"password\" required autocomplete=\"new-password\">\n\n                                @error('password')\n                                    <span class=\"invalid-feedback\" role=\"alert\">\n                                        <strong>{{ $message }}</strong>\n                                    </span>\n                                @enderror\n                            </div>\n                        </div>\n\n                        <div class=\"form-group row\">\n                            <label for=\"password-confirm\" class=\"col-md-4 col-form-label text-md-right\">{{ __('Confirm Password') }}</label>\n\n                            <div class=\"col-md-6\">\n                                <input id=\"password-confirm\" type=\"password\" class=\"form-control\" name=\"password_confirmation\" required autocomplete=\"new-password\">\n                            </div>\n                        </div>\n\n                        <div class=\"form-group row mb-0\">\n                            <div class=\"col-md-6 offset-md-4\">\n                                <button type=\"submit\" class=\"btn btn-primary\">\n                                    {{ __('Register') }}\n                                </button>\n                            </div>\n                        </div>\n                    </form>\n                </div>\n            </div>\n        </div>\n    </div>\n    <style>\n        .container{\n            margin-top: 3%;\n        }\n    </style>\n</div>\n</body>\n</html>\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/LaravelLabs/resources/views/auth/register.blade.php b/LaravelLabs/resources/views/auth/register.blade.php
+--- a/LaravelLabs/resources/views/auth/register.blade.php	(revision b837e45fc74c60094d1c4d5b1536aa4d32b5d3af)
++++ b/LaravelLabs/resources/views/auth/register.blade.php	(date 1607722571500)
+@@ -1,94 +1,94 @@
+-<!doctype html>
+-<html lang="en">
+-<head>
+-    <meta charset="UTF-8">
+-    <meta name="viewport"
+-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+-    <title>Registration</title>
+-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+-    <link rel="stylesheet" href="public/css/app.css">
+-</head>
+-<body>
+-@include('inc.header_reg')
+-<div class="container">
+-    <div class="row justify-content-center">
+-        <div class="col-md-8">
+-            <div class="card">
+-                <div class="card-header">{{ __('Register') }}</div>
++    <!doctype html>
++    <html lang="en">
++    <head>
++        <meta charset="UTF-8">
++        <meta name="viewport"
++              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
++        <meta http-equiv="X-UA-Compatible" content="ie=edge">
++        <title>Registration</title>
++        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
++              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
++        <link rel="stylesheet" href="public/css/app.css">
++    </head>
++    <body>
++    @include('inc.header_reg')
++    <div class="container">
++        <div class="row justify-content-center">
++            <div class="col-md-8">
++                <div class="card">
++                    <div class="card-header">{{ __('Регистрация') }}</div>
+ 
+-                <div class="card-body">
+-                    <form method="POST" action="{{ route('register') }}">
+-                        @csrf
++                    <div class="card-body">
++                        <form method="POST" action="{{ route('register') }}">
++                            @csrf
+ 
+-                        <div class="form-group row">
+-                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
++                            <div class="form-group row">
++                                <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
+ 
+-                            <div class="col-md-6">
+-                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
++                                <div class="col-md-6">
++                                    <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+ 
+-                                @error('name')
+-                                    <span class="invalid-feedback" role="alert">
+-                                        <strong>{{ $message }}</strong>
+-                                    </span>
+-                                @enderror
+-                            </div>
+-                        </div>
++                                    @error('name')
++                                        <span class="invalid-feedback" role="alert">
++                                            <strong>{{ $message }}</strong>
++                                        </span>
++                                    @enderror
++                                </div>
++                            </div>
+ 
+-                        <div class="form-group row">
+-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
++                            <div class="form-group row">
++                                <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+ 
+-                            <div class="col-md-6">
+-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
++                                <div class="col-md-6">
++                                    <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+ 
+-                                @error('email')
+-                                    <span class="invalid-feedback" role="alert">
+-                                        <strong>{{ $message }}</strong>
+-                                    </span>
+-                                @enderror
+-                            </div>
+-                        </div>
++                                    @error('email')
++                                        <span class="invalid-feedback" role="alert">
++                                            <strong>{{ $message }}</strong>
++                                        </span>
++                                    @enderror
++                                </div>
++                            </div>
+ 
+-                        <div class="form-group row">
+-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
++                            <div class="form-group row">
++                                <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
+ 
+-                            <div class="col-md-6">
+-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
++                                <div class="col-md-6">
++                                    <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
+ 
+-                                @error('password')
+-                                    <span class="invalid-feedback" role="alert">
+-                                        <strong>{{ $message }}</strong>
+-                                    </span>
+-                                @enderror
+-                            </div>
+-                        </div>
++                                    @error('password')
++                                        <span class="invalid-feedback" role="alert">
++                                            <strong>{{ $message }}</strong>
++                                        </span>
++                                    @enderror
++                                </div>
++                            </div>
+ 
+-                        <div class="form-group row">
+-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
++                            <div class="form-group row">
++                                <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
+ 
+-                            <div class="col-md-6">
+-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
+-                            </div>
+-                        </div>
++                                <div class="col-md-6">
++                                    <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
++                                </div>
++                            </div>
+ 
+-                        <div class="form-group row mb-0">
+-                            <div class="col-md-6 offset-md-4">
+-                                <button type="submit" class="btn btn-primary">
+-                                    {{ __('Register') }}
+-                                </button>
+-                            </div>
+-                        </div>
+-                    </form>
+-                </div>
+-            </div>
+-        </div>
+-    </div>
+-    <style>
+-        .container{
+-            margin-top: 3%;
+-        }
+-    </style>
+-</div>
+-</body>
+-</html>
++                            <div class="form-group row mb-0">
++                                <div class="col-md-6 offset-md-4">
++                                    <button type="submit" class="btn btn-primary">
++                                        {{ __('Register') }}
++                                    </button>
++                                </div>
++                            </div>
++                        </form>
++                    </div>
++                </div>
++            </div>
++        </div>
++        <style>
++            .container{
++                margin-top: 3%;
++            }
++        </style>
++    </div>
++    </body>
++    </html>
+Index: LaravelLabs/resources/views/auth/passwords/email.blade.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>@extends('layouts.app')\n\n@section('content')\n<div class=\"container\">\n    <div class=\"row justify-content-center\">\n        <div class=\"col-md-8\">\n            <div class=\"card\">\n                <div class=\"card-header\">{{ __('Reset Password') }}</div>\n\n                <div class=\"card-body\">\n                    @if (session('status'))\n                        <div class=\"alert alert-success\" role=\"alert\">\n                            {{ session('status') }}\n                        </div>\n                    @endif\n\n                    <form method=\"POST\" action=\"{{ route('password.email') }}\">\n                        @csrf\n\n                        <div class=\"form-group row\">\n                            <label for=\"email\" class=\"col-md-4 col-form-label text-md-right\">{{ __('E-Mail Address') }}</label>\n\n                            <div class=\"col-md-6\">\n                                <input id=\"email\" type=\"email\" class=\"form-control @error('email') is-invalid @enderror\" name=\"email\" value=\"{{ old('email') }}\" required autocomplete=\"email\" autofocus>\n\n                                @error('email')\n                                    <span class=\"invalid-feedback\" role=\"alert\">\n                                        <strong>{{ $message }}</strong>\n                                    </span>\n                                @enderror\n                            </div>\n                        </div>\n\n                        <div class=\"form-group row mb-0\">\n                            <div class=\"col-md-6 offset-md-4\">\n                                <button type=\"submit\" class=\"btn btn-primary\">\n                                    {{ __('Send Password Reset Link') }}\n                                </button>\n                            </div>\n                        </div>\n                    </form>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n@endsection\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/LaravelLabs/resources/views/auth/passwords/email.blade.php b/LaravelLabs/resources/views/auth/passwords/email.blade.php
+--- a/LaravelLabs/resources/views/auth/passwords/email.blade.php	(revision b837e45fc74c60094d1c4d5b1536aa4d32b5d3af)
++++ b/LaravelLabs/resources/views/auth/passwords/email.blade.php	(date 1607722012746)
+@@ -1,6 +1,18 @@
+-@extends('layouts.app')
++<!doctype html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport"
++          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
++    <meta http-equiv="X-UA-Compatible" content="ie=edge">
++    <title>Document</title>
++    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
++          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
++    <link rel="stylesheet" href="public/css/app.css">
++</head>
++<body>
+ 
+-@section('content')
++@include('inc.header')
+ <div class="container">
+     <div class="row justify-content-center">
+         <div class="col-md-8">
+@@ -44,4 +56,11 @@
+         </div>
+     </div>
+ </div>
+-@endsection
++<style>
++    .container{
++        margin-top: 3%;
++    }
++</style>
++
++</body>
++</html>
+Index: LaravelLabs/resources/views/auth/passwords/reset.blade.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>@extends('layouts.app')\n\n@section('content')\n<div class=\"container\">\n    <div class=\"row justify-content-center\">\n        <div class=\"col-md-8\">\n            <div class=\"card\">\n                <div class=\"card-header\">{{ __('Reset Password') }}</div>\n\n                <div class=\"card-body\">\n                    <form method=\"POST\" action=\"{{ route('password.update') }}\">\n                        @csrf\n\n                        <input type=\"hidden\" name=\"token\" value=\"{{ $token }}\">\n\n                        <div class=\"form-group row\">\n                            <label for=\"email\" class=\"col-md-4 col-form-label text-md-right\">{{ __('E-Mail Address') }}</label>\n\n                            <div class=\"col-md-6\">\n                                <input id=\"email\" type=\"email\" class=\"form-control @error('email') is-invalid @enderror\" name=\"email\" value=\"{{ $email ?? old('email') }}\" required autocomplete=\"email\" autofocus>\n\n                                @error('email')\n                                    <span class=\"invalid-feedback\" role=\"alert\">\n                                        <strong>{{ $message }}</strong>\n                                    </span>\n                                @enderror\n                            </div>\n                        </div>\n\n                        <div class=\"form-group row\">\n                            <label for=\"password\" class=\"col-md-4 col-form-label text-md-right\">{{ __('Password') }}</label>\n\n                            <div class=\"col-md-6\">\n                                <input id=\"password\" type=\"password\" class=\"form-control @error('password') is-invalid @enderror\" name=\"password\" required autocomplete=\"new-password\">\n\n                                @error('password')\n                                    <span class=\"invalid-feedback\" role=\"alert\">\n                                        <strong>{{ $message }}</strong>\n                                    </span>\n                                @enderror\n                            </div>\n                        </div>\n\n                        <div class=\"form-group row\">\n                            <label for=\"password-confirm\" class=\"col-md-4 col-form-label text-md-right\">{{ __('Confirm Password') }}</label>\n\n                            <div class=\"col-md-6\">\n                                <input id=\"password-confirm\" type=\"password\" class=\"form-control\" name=\"password_confirmation\" required autocomplete=\"new-password\">\n                            </div>\n                        </div>\n\n                        <div class=\"form-group row mb-0\">\n                            <div class=\"col-md-6 offset-md-4\">\n                                <button type=\"submit\" class=\"btn btn-primary\">\n                                    {{ __('Reset Password') }}\n                                </button>\n                            </div>\n                        </div>\n                    </form>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n@endsection\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/LaravelLabs/resources/views/auth/passwords/reset.blade.php b/LaravelLabs/resources/views/auth/passwords/reset.blade.php
+--- a/LaravelLabs/resources/views/auth/passwords/reset.blade.php	(revision b837e45fc74c60094d1c4d5b1536aa4d32b5d3af)
++++ b/LaravelLabs/resources/views/auth/passwords/reset.blade.php	(date 1607722709351)
+@@ -1,65 +1,90 @@
+-@extends('layouts.app')
+-
+-@section('content')
+-<div class="container">
+-    <div class="row justify-content-center">
+-        <div class="col-md-8">
+-            <div class="card">
+-                <div class="card-header">{{ __('Reset Password') }}</div>
++<!doctype html>
++    <html lang="ru">
++    <head>
++        <meta charset="UTF-8">
++        <meta name="viewport"
++              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
++        <meta http-equiv="X-UA-Compatible" content="ie=edge">
++        <title>Reset</title>
++        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
++              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
++        <link rel="stylesheet" href="public/css/app.css">
++    </head>
++    <body>
++    @include('inc.header')
++    <div class="container">
++        <div class="row justify-content-center">
++            <div class="col-md-8">
++                <div class="card">
++                    <div class="card-header">{{ __("Сброс пароля") }}</div>
+ 
+-                <div class="card-body">
+-                    <form method="POST" action="{{ route('password.update') }}">
+-                        @csrf
++                    <div class="card-body">
++                        <form method="POST" action="{{ route('password.update') }}">
++                            @csrf
+ 
+-                        <input type="hidden" name="token" value="{{ $token }}">
++                            <input type="hidden" name="token" value="{{ $token }}">
+ 
+-                        <div class="form-group row">
+-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
++                            <div class="form-group row">
++                                <label for="email"
++                                       class="col-md-4 col-form-label text-md-right">{{ __('E-Mail') }}</label>
+ 
+-                            <div class="col-md-6">
+-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ $email ?? old('email') }}" required autocomplete="email" autofocus>
++                                <div class="col-md-6">
++                                    <input id="email" type="email" class="form-control @error('email') is-invalid @enderror"
++                                           name="email" value="{{ $email ?? old('email') }}" required autocomplete="email"
++                                           autofocus>
+ 
+-                                @error('email')
++                                    @error('email')
+                                     <span class="invalid-feedback" role="alert">
+-                                        <strong>{{ $message }}</strong>
+-                                    </span>
+-                                @enderror
+-                            </div>
+-                        </div>
++                                            <strong>{{ $message }}</strong>
++                                        </span>
++                                    @enderror
++                                </div>
++                            </div>
+ 
+-                        <div class="form-group row">
+-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
++                            <div class="form-group row">
++                                <label for="password"
++                                       class="col-md-4 col-form-label text-md-right">{{ __('Пароль') }}</label>
+ 
+-                            <div class="col-md-6">
+-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
++                                <div class="col-md-6">
++                                    <input id="password" type="password"
++                                           class="form-control @error('password') is-invalid @enderror" name="password"
++                                           required autocomplete="new-password">
+ 
+-                                @error('password')
++                                    @error('password')
+                                     <span class="invalid-feedback" role="alert">
+-                                        <strong>{{ $message }}</strong>
+-                                    </span>
+-                                @enderror
+-                            </div>
+-                        </div>
++                                            <strong>{{ $message }}</strong>
++                                        </span>
++                                    @enderror
++                                </div>
++                            </div>
+ 
+-                        <div class="form-group row">
+-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
++                            <div class="form-group row">
++                                <label for="password-confirm"
++                                       class="col-md-4 col-form-label text-md-right">{{ __('Повторите новый пароль') }}</label>
+ 
+-                            <div class="col-md-6">
+-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
+-                            </div>
+-                        </div>
++                                <div class="col-md-6">
++                                    <input id="password-confirm" type="password" class="form-control"
++                                           name="password_confirmation" required autocomplete="new-password">
++                                </div>
++                            </div>
+ 
+-                        <div class="form-group row mb-0">
+-                            <div class="col-md-6 offset-md-4">
+-                                <button type="submit" class="btn btn-primary">
+-                                    {{ __('Reset Password') }}
+-                                </button>
+-                            </div>
+-                        </div>
+-                    </form>
+-                </div>
+-            </div>
+-        </div>
+-    </div>
+-</div>
+-@endsection
++                            <div class="form-group row mb-0">
++                                <div class="col-md-6 offset-md-4">
++                                    <button type="submit" class="btn btn-primary">
++                                        {{ __('Сбросить пароль') }}
++                                    </button>
++                                </div>
++                            </div>
++                        </form>
++                    </div>
++                </div>
++            </div>
++        </div>
++    </div>
++    <style>
++        .container {
++            margin-top: 3%;
++        }
++    </style>
++    </body>
++    </html>
+Index: LaravelLabs/resources/views/add.blade.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\n<html xmlns:th=\"http://www.thymeleaf.org\">\n<head>\n    <meta charset=\"utf-8\">\n    <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\"\n          integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\">\n    <link rel=\"stylesheet\" href=\"public/css/app.css\">\n    <title> Подача идеи </title>\n    <link rel=\"icon\" href=\"img/favicon.ico\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maxim-scale=1.0, user-scalable=0 /\">\n</head>\n<body>\n\n@include('inc.header')\n\n<form action=\"/add\" method=\"post\">\n    @csrf\n    <div class=\"form-group\">\n        <label for=\"name\">Заголовок</label>\n        <input type=\"text\" name=\"name\" placeholder=\"Заголовок\" id=\"name\" class=\"form-control  \">\n    </div>\n\n    <div class=\"form-group\">\n        <label for=\"genre\">Жанр</label>\n        <input type=\"text\" name=\"genre\" placeholder=\"Введите жанр\" id=\"genre\" class=\"form-control\">\n    </div>\n    <div class=\"form-group\">\n        <label for=\"fullText\">Отзыв</label>\n        <textarea type=\"text\" name=\"fullText\" placeholder=\"Отзыв об игре\" id=\"fullText\" class=\"form-control\"></textarea>\n    </div>\n    <button type=\"submit\" class=\"btn btn-success\">Supply</button>\n</form>\n<style>\n    form {\n        margin-left: 20%;\n        margin-right: 20%;\n    }\n</style>\n\n@include('inc.footer')\n\n</body>\n</html>\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/LaravelLabs/resources/views/add.blade.php b/LaravelLabs/resources/views/add.blade.php
+--- a/LaravelLabs/resources/views/add.blade.php	(revision b837e45fc74c60094d1c4d5b1536aa4d32b5d3af)
++++ b/LaravelLabs/resources/views/add.blade.php	(date 1607722012959)
+@@ -35,6 +35,7 @@
+         margin-left: 20%;
+         margin-right: 20%;
+     }
++
+ </style>
+ 
+ @include('inc.footer')
+Index: LaravelLabs/resources/views/inc/header.blade.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><header class=\"d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm\">\n    <p style=\"padding-right: 6px\" class=\"h5 my-0 me-md-auto fw-normal\">GameReview</p>\n    <nav class=\"my-2 my-md-0 me-md-3\">\n        <a class=\"p-2 text-dark\" href=\"\\homepage\">Главная страница</a>\n        <a class=\"p-2 text-dark\" href=\"\\add\">Добавить отзыв</a>\n        <a class=\"p-2 text-dark\" href=\"\\catalog\">Отзывы</a>\n    </nav>\n    <div class=\"a3\">\n        <a id=\"a1\" class=\"btn btn-outline-primary\" href=\"{{ route('register') }}\">Регистрация</a>\n        <a id=\"a2\" class=\"btn btn-outline-secondary\" href=\"{{ route('login') }}\">Войти</a>\n    </div>\n</header>\n<style>\n    #a1,#a2 {\n        margin-right: 10px;\n    }\n    .a3{\n        position: absolute;\n        right: 0;\n    }\n</style>\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/LaravelLabs/resources/views/inc/header.blade.php b/LaravelLabs/resources/views/inc/header.blade.php
+--- a/LaravelLabs/resources/views/inc/header.blade.php	(revision b837e45fc74c60094d1c4d5b1536aa4d32b5d3af)
++++ b/LaravelLabs/resources/views/inc/header.blade.php	(date 1607721594227)
+@@ -1,7 +1,7 @@
+ <header class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+     <p style="padding-right: 6px" class="h5 my-0 me-md-auto fw-normal">GameReview</p>
+     <nav class="my-2 my-md-0 me-md-3">
+-        <a class="p-2 text-dark" href="\homepage">Главная страница</a>
++        <a class="p-2 text-dark" href="\homepage">На главную</a>
+         <a class="p-2 text-dark" href="\add">Добавить отзыв</a>
+         <a class="p-2 text-dark" href="\catalog">Отзывы</a>
+     </nav>
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"af65adda-6ef2-4684-8f29-347021a2c7df\" name=\"Default Changelist\" comment=\"start work\">\n      <change afterPath=\"$PROJECT_DIR$/LaravelLabs/resources/views/inc/header_log.blade.php\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/LaravelLabs/resources/views/inc/header_reg.blade.php\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/LaravelLabs/resources/views/auth/login.blade.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/LaravelLabs/resources/views/auth/login.blade.php\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/LaravelLabs/resources/views/auth/register.blade.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/LaravelLabs/resources/views/auth/register.blade.php\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/LaravelLabs/resources/views/home.blade.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/LaravelLabs/resources/views/home.blade.php\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/LaravelLabs/resources/views/homepage.blade.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/LaravelLabs/resources/views/homepage.blade.php\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/LaravelLabs/resources/views/inc/header.blade.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/LaravelLabs/resources/views/inc/header.blade.php\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/LaravelLabs/resources/views/welcome.blade.php\" beforeDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"ComposerSettings\" synchronizationState=\"SYNCHRONIZE\">\n    <pharConfigPath>$PROJECT_DIR$/LaravelLabs/composer.json</pharConfigPath>\n    <execution />\n  </component>\n  <component name=\"Git.Settings\">\n    <excluded-from-favorite>\n      <branch-storage>\n        <map>\n          <entry type=\"LOCAL\">\n            <value>\n              <list>\n                <branch-info repo=\"$PROJECT_DIR$\" source=\"master\" />\n              </list>\n            </value>\n          </entry>\n        </map>\n      </branch-storage>\n    </excluded-from-favorite>\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\n      <map>\n        <entry key=\"$PROJECT_DIR$\" value=\"master\" />\n      </map>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"PhpWorkspaceProjectConfiguration\" interpreter_name=\"PHP\">\n    <include_path>\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/phpspec/prophecy\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/vlucas/phpdotenv\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/sebastian/recursion-context\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/sebastian/diff\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/sebastian/resource-operations\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/sebastian/object-enumerator\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/sebastian/global-state\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/sebastian/environment\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/sebastian/comparator\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/sebastian/code-unit-reverse-lookup\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/sebastian/version\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/sebastian/exporter\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/sebastian/object-reflector\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/phpdocumentor/reflection-docblock\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/phpdocumentor/type-resolver\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/phpdocumentor/reflection-common\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/filp/whoops\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/webmozart/assert\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/dnoegel/php-xdg-base-dir\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/mockery/mockery\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/egulias/email-validator\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/composer\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/beyondcode/laravel-dump-server\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/nesbot/carbon\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/myclabs/deep-copy\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/hamcrest/hamcrest-php\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/fzaninotto/faker\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/ramsey/uuid\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/monolog/monolog\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/theseer/tokenizer\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/opis/closure\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/psr/simple-cache\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/psr/log\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/psr/container\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/tijsverkoyen/css-to-inline-styles\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/dragonmantank/cron-expression\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/nikic/php-parser\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/nunomaduro/collision\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/phar-io/version\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/phar-io/manifest\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/symfony/polyfill-mbstring\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/symfony/finder\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/symfony/routing\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/symfony/http-client-contracts\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/symfony/css-selector\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/fideloper/proxy\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/symfony/polyfill-intl-normalizer\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/symfony/polyfill-php80\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/symfony/mime\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/symfony/polyfill-ctype\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/erusev/parsedown\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/symfony/polyfill-php72\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/symfony/error-handler\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/psy/psysh\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/symfony/event-dispatcher-contracts\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/symfony/polyfill-php73\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/paragonie/random_compat\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/symfony/polyfill-intl-idn\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/league/flysystem\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/phpunit/php-code-coverage\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/symfony/console\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/laravel/tinker\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/phpunit/phpunit\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/symfony/polyfill-iconv\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/doctrine/lexer\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/laravel/framework\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/phpunit/php-text-template\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/symfony/event-dispatcher\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/doctrine/instantiator\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/phpunit/php-file-iterator\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/symfony/var-dumper\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/doctrine/inflector\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/jakub-onderka/php-console-highlighter\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/phpunit/php-token-stream\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/symfony/http-foundation\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/jakub-onderka/php-console-color\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/phpunit/php-timer\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/symfony/http-kernel\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/symfony/translation-contracts\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/symfony/service-contracts\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/swiftmailer/swiftmailer\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/symfony/debug\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/symfony/translation\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/symfony/process\" />\n      <path value=\"$PROJECT_DIR$/LaravelLabs/vendor/phpoption/phpoption\" />\n    </include_path>\n  </component>\n  <component name=\"ProjectId\" id=\"1lVtxdXF2IWVK2b3vQstFFkeXA9\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\n    <OptionsSetting value=\"false\" id=\"Update\" />\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\n  </component>\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$\" />\n    <property name=\"node.js.detected.package.eslint\" value=\"true\" />\n    <property name=\"node.js.detected.package.tslint\" value=\"true\" />\n    <property name=\"node.js.path.for.package.eslint\" value=\"project\" />\n    <property name=\"node.js.path.for.package.tslint\" value=\"project\" />\n    <property name=\"node.js.selected.package.eslint\" value=\"(autodetect)\" />\n    <property name=\"node.js.selected.package.tslint\" value=\"(autodetect)\" />\n    <property name=\"nodejs_package_manager_path\" value=\"npm\" />\n    <property name=\"vue.rearranger.settings.migration\" value=\"true\" />\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"af65adda-6ef2-4684-8f29-347021a2c7df\" name=\"Default Changelist\" comment=\"\" />\n      <created>1607694335888</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1607694335888</updated>\n      <workItem from=\"1607694337438\" duration=\"4766000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"first push\">\n      <created>1607701459560</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1607701459560</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"start work\">\n      <created>1607705838853</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1607705838853</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"3\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"first push\" />\n    <MESSAGE value=\"start work\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"start work\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision b837e45fc74c60094d1c4d5b1536aa4d32b5d3af)
++++ b/.idea/workspace.xml	(date 1607722572855)
+@@ -1,16 +1,13 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="af65adda-6ef2-4684-8f29-347021a2c7df" name="Default Changelist" comment="start work">
+-      <change afterPath="$PROJECT_DIR$/LaravelLabs/resources/views/inc/header_log.blade.php" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/LaravelLabs/resources/views/inc/header_reg.blade.php" afterDir="false" />
++    <list default="true" id="af65adda-6ef2-4684-8f29-347021a2c7df" name="Default Changelist" comment="edit styles and header">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/LaravelLabs/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/LaravelLabs/resources/views/auth/login.blade.php" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/LaravelLabs/resources/views/add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/LaravelLabs/resources/views/add.blade.php" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/LaravelLabs/resources/views/auth/passwords/email.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/LaravelLabs/resources/views/auth/passwords/email.blade.php" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/LaravelLabs/resources/views/auth/passwords/reset.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/LaravelLabs/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/LaravelLabs/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/LaravelLabs/resources/views/auth/register.blade.php" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/LaravelLabs/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/LaravelLabs/resources/views/home.blade.php" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/LaravelLabs/resources/views/homepage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/LaravelLabs/resources/views/homepage.blade.php" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/LaravelLabs/resources/views/inc/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/LaravelLabs/resources/views/inc/header.blade.php" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/LaravelLabs/resources/views/welcome.blade.php" beforeDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -178,7 +175,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1607705838853</updated>
+     </task>
+-    <option name="localTasksCounter" value="3" />
++    <task id="LOCAL-00003" summary="edit styles and header">
++      <created>1607721450743</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1607721450743</updated>
++    </task>
++    <option name="localTasksCounter" value="4" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -187,6 +191,7 @@
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="first push" />
+     <MESSAGE value="start work" />
+-    <option name="LAST_COMMIT_MESSAGE" value="start work" />
++    <MESSAGE value="edit styles and header" />
++    <option name="LAST_COMMIT_MESSAGE" value="edit styles and header" />
+   </component>
+ </project>
+\ No newline at end of file
