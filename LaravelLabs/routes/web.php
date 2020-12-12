@@ -18,8 +18,6 @@ Route::get('/catalog', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-
 Auth::routes();
-Route::get('logout','Auth\LoginController@logout');
 
-//Route::get('/admin', 'Admin/AdminControl@index')->name('admin.admin_page')->middleware('auth');
+Route::get('/adminPage', 'LoginController@index')->name('admin.adminHomepage');
